@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="design.css">
+	</head>
+	<title> Calculator </title>
+
+	<body>
+	     <h2>Press Caps lock. A: +; S: -; M: *; D: /; B: &larr;; C: clear; P: .; E: =</h2>
+		<div id="calculator">
+		<form>
+			<input type="text" id="display" disabled=""> <br/>
+			<input type="button" value="C" id="keys" onclick="addtoscreen('C')" onkeydown="addtoscreen('C')">
+			<input type="button" value="&larr;" id="keys" onclick="backspace()" onkeydown="backspace()">
+			<input type="button" value="X&sup3;" id="keys" onclick="power(3)">
+			<input type="button" value="&radic;" id="keys" onclick="power(0.5)"> <br>
+
+			<input type="button" value="9" id="keys" onclick="addtoscreen('9')" onkeydown="addtoscreen('9')">
+			<input type="button" value="8" id="keys" onclick="addtoscreen('8')" onkeydown="addtoscreen('8')">
+			<input type="button" value="7" id="keys" onclick="addtoscreen('7')" onkeydown="addtoscreen('7')">
+			<input type="button" value="+" id="keys" onclick="addtoscreen('+')" onkeydown="addtoscreen('+')"> <br>
+			 
+			<input type="button" value="6" id="keys" onclick="addtoscreen('6')" onkeydown="addtoscreen('6')">
+			<input type="button" value="5" id="keys" onclick="addtoscreen('5')" onkeydown="addtoscreen('5')">
+			<input type="button" value="4" id="keys" onclick="addtoscreen('4')" onkeydown="addtoscreen('4)">
+			<input type="button" value="-" id="keys" onclick="addtoscreen('-')" onkeydown="addtoscreen('-')"> <br>
+
+			<input type="button" value="3" id="keys" onclick="addtoscreen('3')" onkeydown="addtoscreen('3')">
+			<input type="button" value="2" id="keys" onclick="addtoscreen('2')" onkeydown="addtoscreen('2')">
+			<input type="button" value="1" id="keys" onclick="addtoscreen('1')" onkeydown="addtoscreen('1')">
+			<input type="button" value="*" id="keys" onclick="addtoscreen('*')" onkeydown="addtoscreen('*)"> <br>
+			
+			<input type="button" value="0" id="keys" onclick="addtoscreen('0')" onkeydown="addtoscreen('0')">
+			<input type="button" value="." id="keys" onkeydown="addtoscreen('.')" onclick="addtoscreen('.')" >
+			<input type="button" value="=" id="keys" onclick="answer()" onkeydown="answer()">
+			<input type="button" value="/" id="keys" onclick="addtoscreen('/')" onkeydown="addtoscreen('/')">
+
+		</form>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script src="logic.js">  </script>
+		
+	</body>
+
+</html>
